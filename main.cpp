@@ -10,7 +10,7 @@ bool read(double *array, unsigned int size){
     istringstream stream(stroka);
     for(unsigned int i=0; i<size; ++i){
         if(!(stream>>array[i])){
-            cout<<"error"<<endl;
+            cout<<"An error has occured while reading input data."<<endl;
             return false;
         }
     }
